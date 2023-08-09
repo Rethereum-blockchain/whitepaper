@@ -1,0 +1,277 @@
+\documentclass[a4paper,onecolumn, superscriptaddress,10pt,accepted=2020-05-01,issue=1, volume=2, shorttitle=papers]{compositionalityarticle}
+\pdfoutput=1
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\usepackage{tikz}
+\usepackage{lipsum}
+
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\title{Rethereum Blockchain}
+\date{07/08/2023}
+\author{Rethereum Team}
+\email{team@rethereum.org}
+\homepage{https://rethereum.org}
+
+\maketitle
+
+\begin{abstract}
+     Rethereum is a new blockchain project that aims to revive the original vision of Ethereum as a global, decentralized platform for money and new kinds of applications. Rethereum is based on a Ethereum's final release to support Proof-of-Work.
+     
+     The \texttt{Rethereum} project aims to maintain a strong Proof-of-work cryptography blockchain and prove that  a stable financial platform can be accomplished in a decentralised event-driven blockchain.
+    
+    Rethereum isn't just another Ethereum clone, it is a brand new blockchain and brand new ideas to keep Proof-of-work as the backbone of the network for security and decentralisation. 
+    
+\end{abstract}
+
+\vspace{10cm}
+
+\begin{verbatim}
+
+Rethereum is based on the Ethereum network and code, by extention 
+technical details from the Ethereum whitepaper can be considered a part 
+of Rethereum unless written otherwise. Rethereum remains backward compatible 
+with Ethereum and such network specific technical details should be 
+understood from Ethereum's detailed documents. This whitepaper should be 
+considered an extention of Ethereums Whitepaper detailing change, plans, 
+ideologies and methodologies.
+\end{verbatim}
+
+
+\newpage
+
+\section{Native Currency}
+
+The network runs on a single currency, symbol \texttt{RTH}, this is used for transactions, mining, smart contract deployment and execution. The currency has 18 decimal places, which allows for very precise transactions and avoids rounding errors. The currency is mined by solving proof-of-work problems, which secure the network and validate transactions. 
+
+\vspace{0.3cm}
+
+The mining reward is initially set to 4 coins per block, but it will gradually decrease over a period of 9 years until it reaches a constant inflation rate of 2.1\% per year. This is designed to mimic the natural growth of the economy and to encourage early adoption. The total supply of coins will be 125 million after 9 years, and then it will increase by 2.1\% annually. This means the first year of the 2.1\% inflation cycle each block will reward 0.58228108671
+
+\vspace{0.3cm}
+
+Additionally, transaction fees are rewarded to the block miner and not burned off the network from EIP-1559. This ensures that miners have an incentive to process transactions and to maintain the network security. The transaction fees are dynamically adjusted based on the network congestion and the demand for block space. This creates a more efficient and fair fee market that benefits both users and miners.
+
+\section{Programmable Currency}
+
+The main features of our proposed system is a Turing complete programmable currency using smart contracts. Smart contracts are self-executing agreements that are encoded on the blockchain and can perform complex logic and operations. They enable users to create and enforce rules for the transfer and use of the currency, such as conditional payments, escrow services, automated auctions, and decentralized applications. 
+
+\vspace{0.3cm}
+
+A Turing complete programmable currency means that the smart contracts can express any computable function and are not limited by predefined templates or functions. This allows for greater flexibility, innovation, and customization of the currency system. Users can design and deploy their own smart contracts to suit their specific needs and preferences, as well as interact with other smart contracts on the network. 
+
+\vspace{0.3cm}
+
+The smart contracts also opens up new possibilities for cross-chain interoperability, as smart contracts can communicate and exchange value with other blockchains that support the same programming language and standards.
+
+\vspace{0.3cm}
+
+Another important aspect of our system is the ability to create custom currencies that are backed by the native currency of the network. Users can issue their own tokens that represent a fixed amount of the native currency, and use them for various purposes, such as crowdfunding, loyalty programs, stablecoins, or digital assets. 
+
+\vspace{0.3cm}
+
+These tokens are fully compatible with the smart contracts and can benefit from the same features and security of the programmable currency. Users can also exchange their tokens with other users or redeem them for the native currency at any time. This way, users can create and manage their own monetary systems within the network, without relying on third parties or intermediaries. Our system thus offers a high degree of freedom and diversity for the creation and use of currencies, while maintaining a strong and consistent value proposition for the native currency.
+
+\vspace{0.5cm}
+
+\newpage
+
+\subsection{References and footnotes}
+\label{sec:subsec1}
+
+\begin{theorem}[Solidity Language]
+  Rethereum uses the Solidity programming language to enable our programmable blockchain.
+  \bibitem{Solidity} Solidity Team,
+  \href{https://soliditylang.org/}
+       {https://soliditylang.org/}
+\end{theorem}
+\begin{verbatim}
+
+A programmable currency is a type of digital money that can be customized and 
+programmed to perform various functions and transactions. However, it does not 
+have the ability to alter the underlying network, blockchain or native 
+currency that it operates on. Rather, it works in harmony and compatibility 
+with these elements, leveraging their security and scalability.
+\end{verbatim}
+\vspace{2cm}
+
+\section{Rethereum is not Ethereum}
+
+\begin{equation}
+  A \neq B
+\end{equation}
+
+    Rethereum, existing in response to problems enabled by Ethereum's centralization, quickly realized and adopted the genius of Bitcoin's decentralist design decisions.
+
+\vspace{0.5cm}
+    
+    Like \texttt{ETH}, \texttt{RTH} is a Turing Complete Smart Contract Platform.
+    
+    Like \texttt{BTC}, \texttt{RTH} has a miraculous origin, which is impossible to recreate.
+    
+    Like \texttt{BTC}, \texttt{RTH} has "no official anything", preventing "official" capture.
+    
+    Like \texttt{BTC}, \texttt{RTH} aims to provide a reliable secure base layer and does so by upgrading the protocol conservatively.
+    
+    Like \texttt{BTC}, \texttt{RTH} requires constant skepticism in community interactions.
+    
+\vspace{1cm}
+
+    A simple way to understand what Rethereum aims to do is to compare it with the current state of the cryptocurrency world, especially for those who have some prior knowledge of it.
+
+When The Ethereum Foundation decided to forsake the principles of decentralization that attracted many supporters and contributors, it was a regrettable move that also created an opportunity for a new project that would uphold the Original Ethereum Vision.
+
+By switching to proof-of-stake, Ethereum became a centralized system under one authority, which goes against the spirit of cryptocurrency.
+
+\section{Proof Of Work Consensus}
+One of the main differences between Rethereum and Ethereum is the choice of consensus algorithm. While Ethereum is planning to transition from Proof-of-Work (PoW) to Proof-of-Stake (PoS) in the near future, Rethereum is committed to keeping PoW as the core mechanism for securing and scaling the network. In this section, we will explain the rationale behind this decision and the benefits of using a modified version of Ethash, called EthashB3, that leverages the advantages of Blake3 hashing function.
+
+\newpage
+
+PoW is a well-established and robust consensus algorithm that has been successfully used by many cryptocurrencies, including Bitcoin and Ethereum. PoW requires miners to solve a cryptographic puzzle in order to create new blocks and earn rewards. The difficulty of the puzzle is dynamically adjusted to ensure a stable block time and a fair distribution of rewards. PoW provides a high level of security and decentralization, as it makes it costly and difficult for any malicious actor to attack or manipulate the network.
+
+\vspace{0.3cm}
+
+One of the challenges of blockchain technology is to achieve a secure and decentralized consensus among the network participants. Proof-of-Work (PoW) is a common consensus mechanism that requires nodes to solve complex mathematical problems and compete for the right to append new blocks to the ledger. PoW, however, has some limitations, such as high energy consumption, vulnerability to 51\% attacks, and low scalability. A different consensus mechanism that aims to overcome these limitations is Proof-of-Stake (PoS), which does not depend on mining. PoS nodes stake their own coins to validate transactions and receive rewards. PoS improves the efficiency and scalability of the network, and also lowers the environmental impact and the hardware costs of running a node. However, PoS also introduces new challenges, such as the risk of centralization and the lack of incentives for honest behavior. Therefore, many blockchain platforms, such as rethereum, have decided not to adopt PoS on their network.
+
+\vspace{0.3cm}
+
+Rethereum, believes that PoW is a viable and preferable option for achieving security and scalability, especially with some modifications and improvements. Rethereum proposes to use EthashB3, which is a variant of Ethash that replaces the Keccak hashing function with Blake3. Blake3 is a new hashing function that was designed to be fast, secure, and versatile. Blake3 offers several advantages over Keccak, such as:
+
+\vspace{0.3cm}
+
+\begin{itemize}
+    \item Faster performance: Blake3 can achieve speeds of up to 10 GB/s per core on modern CPUs, compared to Keccak's 0.3 GB/s. This means that EthashB3 can process more transactions per second and reduce network congestion.
+\end{itemize}
+\begin{itemize}
+    \item Lower memory usage: Blake3 uses only 32 bytes of internal state, compared to Keccak's 1600 bytes. This means that EthashB3 can reduce the memory footprint and bandwidth requirements of nodes and miners.
+\end{itemize}
+\begin{itemize}
+    \item Simpler design: Blake3 is based on a single compression function, called Chacha, that is widely used and tested in cryptography. This means that EthashB3 can reduce the complexity and the potential for bugs or vulnerabilities in the code.
+\end{itemize}
+\begin{itemize}
+    \item Higher security: Blake3 provides 256-bit security against all types of attacks, including quantum attacks. This means that EthashB3 can ensure the long-term security and integrity of the network.
+\end{itemize}
+
+\vspace{0.3cm}
+
+By using EthashB3, Rethereum aims to preserve the benefits of PoW while mitigating its drawbacks. EthashB3 can offer a higher level of performance, efficiency, simplicity, and security than Ethash, making Rethereum a more competitive and attractive platform for developers and users.
+
+\newpage
+
+\section{On-Chain Innovation}
+Rethereum is a cryptocurrency that aims to create a long-term stable economy, unlike many other cryptocurrencies that are subject to volatility and uncertainty. One of the ways that Rethereum achieves this goal is by transitioning to a stable inflation emission rate for miners, which is based on the global accepted average of 2.1\%. This means that the supply of Rethereum will increase at a predictable and moderate rate, ensuring that the network remains financially secure and sustainable.
+
+\vspace{0.3cm}
+
+Another way that Rethereum fosters innovation and stability is by introducing onchain bonds, which are contracts that allow users to lock up their coins for a fixed period of time and receive a token value percentage as a reward at the end. These bonds can be bought and sold between users, creating a secondary market for long-term investments. Bonds can also be used to inject new capital into the network, which can help balance out the various ways that coins are lost, such as lost wallets, incorrect transactions, theft or death. By offering users an incentive to hold their coins for longer periods of time, Rethereum can increase the demand and value of its currency.
+
+\section{Wide equations}
+Very wide equations can be shown expanding over both columns using the \texttt{widetext} environment.
+In \texttt{onecolumn} mode, the \texttt{widetext} environment has no effect.
+\begin{widetext}
+  \begin{equation}
+|\mathrm{AME}(n=6,q=5)\rangle=\sum_{i,j,k=0}^4 |i,j,k,i+j+k,i+2j+3k,i+3j+4k\rangle
+  \end{equation}
+\end{widetext}
+To enabled this feature in the \texttt{twocolumn} mode, \texttt{compositionalityarticle} relies on the package \texttt{ltxgrid}.
+Unfortunately this package has a bug that leads to a sub-optimal placement of extremely long footnotes.
+
+\section{Title information}
+You can provide information on authors and affiliations in the common format also used by \texttt{revtex}:
+\begin{verbatim}
+\title{Title}
+\author{Author 1}
+\author{Author 2}
+\affiliation{Affiliation 1}
+\author{Author 3}
+\affiliation{Affiliation 2}
+\author{Author 4}
+\affiliation{Affiliation 1}
+\affiliation{Affiliation 3}
+\end{verbatim}
+In this example affiliation 1 will be associated with authors 1, 2, and 4, affiliation 2 with author 3 and affiliation 3 with author 4.
+Repeated affiliations are automatically recognized and typeset in the \texttt{superscriptaddress} style.
+Alternatively you can use a format similar to that of the \texttt{authblk} package and the \texttt{elsearticle} document class to specify the same affiliation relations as follows:
+\begin{verbatim}
+\title{Title}
+\author[1]{Author 1}
+\author[1]{Author 2}
+\author[2]{Author 3}
+\author[1,3]{Author 4}
+\affil[1]{Affiliation 1}
+\affil[2]{Affiliation 1}
+\affil[3]{Affiliation 1}
+\end{verbatim}
+
+
+
+
+
+
+\appendix
+
+\section{First section of the appendix}
+Compositionality allows the usage of appendices.
+
+\subsection{Subsection}
+Ideally, the command \texttt{\string\appendix} should be put before the appendices to get appropriate section numbering.
+The appendices are then numbered alphabetically, with numeric (sub)subsection numbering.
+Equations continue to be numbered sequentially.
+\begin{equation}
+  A \neq B
+\end{equation}
+You are free to change this in case it is more appropriate for your article, but a consistent and unambiguous numbering of sections and equations must be ensured.
+
+If you want your appendices to appear in \texttt{onecolumn} mode but the rest of the document in \texttt{twocolumn} mode, you can insert the command \texttt{\string\onecolumn\string\newpage} before \texttt{\string\appendix}.   
+
+\section{Problems and Bugs}
+In case you encounter problems using the \texttt{compositionalityarticle} class please analyse the error message carefully and look for help online; \href{http://tex.stackexchange.com/}{http://tex.stackexchange.com/} is an excellent resource.
+If you cannot resolve a problem,  open a bug report in our bug-tracker under 
+\begin{center}
+  \href{https://github.com/compositionality/issues}{https://github.com/compositionality/latex-template/issues}.
+\end{center}
+
+You can also contact us via email under \href{executive-board@compositionality-journal.org}{executive@compositionality-journal.org}, but it may take significantly longer to get a response.
+In any case we need the full source of a document that produces the problem and the log file showing the error to help you.
+
+\newpage
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+\bibitem{Ethereum}
+  Ethereum Foundation,
+  \href{https://ethereum.org/en/}{https://ethereum.org/en/}
+
+\bibitem{EthereumWhitepaper}
+  Ethereum Whitepaper,
+  \href{https://ethereum.org/en/whitepaper/}{https://ethereum.org/en/whitepaper/}
+
+\bibitem{bonds}
+  US Government bonds 
+  \href{https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds}{https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds}
+
+\bibitem{PoW}
+  Crypto Proof-of-work 
+  \href{https://en.wikipedia.org/wiki/Proof_of_work}{https://en.wikipedia.org/wiki/Proof_of_work}
+
+\bibitem{howtogetdoilinksinbibliography}
+  StackExchange discussion on \href{http://tex.stackexchange.com/questions/3802/how-to-get-doi-links-in-bibliography}{``How to get DOI links in bibliography'' (2016-11-18)}
+  
+\bibitem{automaticallyaddingdoifieldstoahandmadebibliography}
+  StackExchange discussion on \href{http://tex.stackexchange.com/questions/6810/automatically-adding-doi-fields-to-a-hand-made-bibliography}{``Automatically adding DOI fields to a hand-made bibliography'' (2016-11-18)}
+
+\end{thebibliography}
+
+
+
+\onecolumn\newpage
+
+
+\end{document}
