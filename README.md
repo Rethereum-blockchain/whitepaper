@@ -1,4 +1,4 @@
-# Retherum Whitepaper LaTeX Source
+# Hypra (Previously Rethereum) Whitepaper LaTeX Source
 
 This is the LaTeX documents of the the Whitepaper. 
 
